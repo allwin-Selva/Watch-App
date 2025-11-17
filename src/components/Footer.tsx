@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
+  const [showStory, setShowStory] = useState(false);
+
   return (
     <footer className="bg-black border-t border-brand-accent/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -14,7 +16,15 @@ const Footer: React.FC = () => {
             <h4 className="font-semibold text-brand-light/90 mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li><Link to="/products" className="text-sm text-brand-light/70 hover:text-brand-accent transition-colors">Shop All</Link></li>
-              <li><a href="#" className="text-sm text-brand-light/70 hover:text-brand-accent transition-colors">Our Story</a></li>
+              <li>
+                <button
+                  type="button"
+                  onClick={() => setShowStory(true)}
+                  className="text-left text-sm text-brand-light/70 hover:text-brand-accent transition-colors"
+                >
+                  Our Story
+                </button>
+              </li>
               <li><a href="#" className="text-sm text-brand-light/70 hover:text-brand-accent transition-colors">Contact Us</a></li>
             </ul>
           </div>
@@ -39,7 +49,29 @@ const Footer: React.FC = () => {
             </form>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t border-brand-accent/20 text-center text-sm text-brand-light/50">
+        {showStory && (
+          <div className="mt-10 mb-4 rounded-lg border border-brand-accent/30 bg-brand-slate/60 p-6 max-w-3xl mx-auto text-center">
+            <h4 className="text-2xl font-serif font-bold text-brand-accent mb-3">
+              Our Story
+            </h4>
+            <p className="text-sm sm:text-base text-brand-light/80 leading-relaxed">
+              Tickora began as a small atelier for collectors who believed a watch is more than a way to tell time—
+              it is a legacy that can be worn. From sourcing rare mechanical pieces to curating cutting‑edge smart
+              timepieces, we have spent years building relationships with master craftsmen and trusted manufacturers
+              around the world. Every watch in our emporium is hand‑selected, authenticated, and backed by a concierge‑
+              level support experience, so that your next timepiece isn&apos;t just purchased, it&apos;s carefully
+              chosen to become part of your story.
+            </p>
+            <button
+              type="button"
+              onClick={() => setShowStory(false)}
+              className="mt-4 inline-flex items-center justify-center rounded-md border border-brand-accent/60 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-brand-light hover:bg-brand-accent hover:text-black transition-colors"
+            >
+              Close
+            </button>
+          </div>
+        )}
+        <div className="mt-8 pt-8 border-t border-brand-accent/20 text-center text-sm text-brand-light/50">
           <p>&copy; {new Date().getFullYear()} Tickora. All Rights Reserved.</p>
         </div>
       </div>
