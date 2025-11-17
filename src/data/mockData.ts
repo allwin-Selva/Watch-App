@@ -11,7 +11,7 @@ export const mockProducts: Product[] = [
         "https://media.tudorwatch.com/image/upload/q_auto/f_auto/c_limit,w_3840/v1/tudorwatch/watches/model-page/m79360n-0024/gallery/03-watch-worn-square"
     ],
     category: 'Luxury',
-    strapType: 'Leather',
+    strapType: 'Metal',
     dialSize: 42,
     rating: 4.8,
     reviews: [
@@ -26,11 +26,11 @@ export const mockProducts: Product[] = [
     price: 624000,
     description: "Forged from 18k solid gold, the Odyssey Gold is the pinnacle of luxury. Its intricate skeleton dial reveals the complex mechanism within, a true statement piece for the discerning collector.",
     images: [
-        "https://images.augustman.com/wp-content/uploads/sites/2/2022/10/27044039/gold-watch-for-men.jpg?tr=w-1366"
+        "https://images.squarespace-cdn.com/content/v1/5c78138211f784469d4817df/15f963be-d156-4260-a5f8-a4b9cb05d93c/IMG_7011.JPG"
        
     ],
     category: 'Luxury',
-    strapType: 'Metal',
+    strapType: 'Rubber',
     dialSize: 44,
     rating: 4.9,
     reviews: [
@@ -44,7 +44,7 @@ export const mockProducts: Product[] = [
     price: 71920,
     description: "The future on your wrist. The Tech-Liner V2 boasts a vibrant AMOLED display, comprehensive health tracking, and a week-long battery life. Seamlessly integrates with all your devices.",
     images: [
-        "https://monochrome-watches.com/wp-content/uploads/2023/05/Rado-Captain-Cook-High-Tech-Ceramic-Skeleton-Plasma-Grey-and-Rose-Gold-PVD-R32148162-hands-on-8.jpg"
+      "https://m.media-amazon.com/images/I/71mTOO-TKUL._AC_SL1500_.jpg"
     ],
     category: 'Smartwatch',
     strapType: 'Rubber',
@@ -62,10 +62,10 @@ export const mockProducts: Product[] = [
     price: 36000,
     description: "Minimalist Scandinavian design meets everyday functionality. The Urban Dweller is a versatile timepiece that complements any outfit, with a reliable quartz movement and a comfortable fabric strap.",
     images: [
-        "https://cdn.hiconsumption.com/wp-content/uploads/2025/03/Rolex-Land-Dweller-3.jpg"
+      "https://static.digit.in/default/360b4060f42ce548336489904a6da2c695a09cf8.jpeg"
     ],
     category: 'Budget',
-    strapType: 'Fabric',
+    strapType: 'Leather',
     dialSize: 40,
     rating: 4.5,
     reviews: [
@@ -82,7 +82,7 @@ export const mockProducts: Product[] = [
         "https://cdna.lystit.com/520/650/n/photos/bloomingdales/496e7fdb/tissot-WhiteBrown-Heritage-Navigator-Watch-43Mm.jpeg"
     ],
     category: 'Luxury',
-    strapType: 'Metal',
+    strapType: 'Leather',
     dialSize: 43,
     rating: 4.7,
     reviews: [
@@ -96,10 +96,10 @@ export const mockProducts: Product[] = [
     price: 52000,
     description: "The ultimate fitness companion. With advanced GPS, heart rate monitoring, and performance analytics, the Apex Runner is engineered to help you beat your personal best.",
     images: [
-       "https://discover.zestmoney.in/wp-content/uploads/2020/04/titan-black-analog-watch-768x1168.jpg"
+       "https://m.media-amazon.com/images/I/71KjTSO8M9L._SL1500_.jpg"
     ],
     category: 'Smartwatch',
-    strapType: 'Rubber',
+    strapType: 'Metal',
     dialSize: 46,
     rating: 4.7,
     reviews: [
@@ -113,11 +113,10 @@ export const mockProducts: Product[] = [
     price: 25600,
     description: "A tribute to classic watchmaking at an accessible price. The Classic Century offers a clean, legible dial with a date window, perfect for daily wear.",
     images: [
-        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1447069153592-5a95a82c41aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+      "https://i.pinimg.com/736x/5e/b9/67/5eb967164140d116b94785aaf2d209c4.jpg"
     ],
     category: 'Budget',
-    strapType: 'Leather',
+    strapType: 'Metal',
     dialSize: 39,
     rating: 4.4,
     reviews: [
@@ -131,8 +130,7 @@ export const mockProducts: Product[] = [
     price: 760000,
     description: "A dazzling display of diamond-set bezel and mother-of-pearl dial. The Starlight Gala is an evening watch that captures the magic of the night sky.",
     images: [
-        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1615551253272-4d7a8b302c34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+      "http://guesswatches.com/cdn/shop/products/GW0308L5_F.png?v=1692037583"
     ],
     category: 'Luxury',
     strapType: 'Metal',
