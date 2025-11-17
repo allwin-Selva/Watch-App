@@ -22,9 +22,12 @@ const HeroSection: React.FC = () => (
     <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full text-center text-brand-light">
       <h1 className="text-4xl md:text-6xl font-black font-serif text-brand-accent uppercase tracking-wider">Timeless Elegance</h1>
       <p className="mt-4 max-w-2xl text-lg md:text-xl text-brand-light/90">Discover a curated collection of the world's finest timepieces. Craftsmanship that transcends generations.</p>
-      <a href="#featured-products" className="mt-8 px-8 py-3 bg-brand-accent text-black font-bold uppercase rounded-sm hover:opacity-90 transition-all duration-300 transform hover:scale-105">
+      <Link
+        to="/products"
+        className="mt-8 px-8 py-3 bg-brand-accent text-black font-bold uppercase rounded-sm hover:opacity-90 transition-all duration-300 transform hover:scale-105"
+      >
         Explore The Collection
-      </a>
+      </Link>
     </div>
   </div>
 );
