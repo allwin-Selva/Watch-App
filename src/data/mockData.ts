@@ -445,7 +445,7 @@ export const mockProducts: Product[] = [
     price: 1180000,
     description: "The ultimate travel companion. Features a bidirectional rotatable 24-hour bezel, independent 24-hour hand, and dual time zone display. Powered by the Caliber 3285 movement, perfect for frequent travelers.",
     images: [
-      "https://cdn.thewatchpages.com/app/uploads/2023/04/28100807/rolex-gmt-master-ii-126718grnr-0001.jpeg"
+      "https://cdn.thewatchpages.com/app/uploads/2023/04/28100807/rolex-gmt-master-ii-126718grnr-0001.jpg"
     ],
     category: 'Luxury',
     strapType: 'Metal',
