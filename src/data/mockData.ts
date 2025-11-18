@@ -148,10 +148,10 @@ export const mockProducts: Product[] = [
     price: 18950,
     description: "The world's slimmest watch with a thickness of just 3.5mm. The Titan Edge features a premium sapphire crystal, Japanese quartz movement, and a sophisticated design that redefines elegance. Perfect for those who appreciate minimalist luxury.",
     images: [
-      "https://m.media-amazon.com/images/I/71VqJ8KqH-L._AC_SL1500_.jpg"
+      "https://images-na.ssl-images-amazon.com/images/I/81cIcXktlpL._AC_UL1500_.jpg"
     ],
     category: 'Budget',
-    strapType: 'Leather',
+    strapType: 'Metal',
     dialSize: 40,
     rating: 4.7,
     reviews: [
@@ -163,13 +163,13 @@ export const mockProducts: Product[] = [
     id: 10,
     name: "Titan Neo Classic",
     brand: "Titan",
-    price: 12450,
+    price: 1245,
     description: "A timeless classic that combines contemporary design with traditional watchmaking. Features a reliable quartz movement, water resistance up to 5 ATM, and a polished stainless steel case. Ideal for everyday wear.",
     images: [
-      "https://m.media-amazon.com/images/I/71K8Q8KqH-L._AC_SL1500_.jpg"
+      "https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dwf99e40a3/images/Titan/Catalog/1805WP01_2.jpg?sw=800&sh=800.jpg"
     ],
     category: 'Budget',
-    strapType: 'Metal',
+    strapType: 'Leather',
     dialSize: 42,
     rating: 4.6,
     reviews: [
@@ -180,10 +180,10 @@ export const mockProducts: Product[] = [
     id: 11,
     name: "Titan Raga Elegance",
     brand: "Titan",
-    price: 15990,
+    price: 1599,
     description: "Designed exclusively for women, the Raga Elegance features a uniquely shaped case with a mother-of-pearl dial and diamond hour markers. The watch exudes sophistication and grace, perfect for special occasions.",
     images: [
-      "https://m.media-amazon.com/images/I/61VqJ8KqH-L._AC_SL1500_.jpg"
+      "https://watchfactory.in/cdn/shop/files/2608WM01_1.jpg?v=1711813504&width=1080.jpg"
     ],
     category: 'Budget',
     strapType: 'Metal',
@@ -197,13 +197,13 @@ export const mockProducts: Product[] = [
     id: 12,
     name: "Titan Workwear Professional",
     brand: "Titan",
-    price: 16950,
+    price: 695,
     description: "Built for professionals who demand reliability and style. Features a multifunction dial with day-date display, luminous hands, and a robust stainless steel construction. Water-resistant and built to last.",
     images: [
-      "https://m.media-amazon.com/images/I/71K8Q8KqH-L._AC_SL1500_.jpg"
+      "https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw4a304fb4/images/Titan/Catalog/1870NL01_2.jpg?sw=800&sh=800,jpg"
     ],
     category: 'Budget',
-    strapType: 'Metal',
+    strapType: 'Leather',
     dialSize: 42,
     rating: 4.5,
     reviews: [
@@ -217,7 +217,7 @@ export const mockProducts: Product[] = [
     price: 14450,
     description: "A statement piece for the modern woman. Features a unique case design with a sunray dial, Roman numeral markers, and a comfortable leather strap. Combines elegance with everyday practicality.",
     images: [
-      "https://m.media-amazon.com/images/I/61VqJ8KqH-L._AC_SL1500_.jpg"
+      "https://www.titan.co.in/on/demandware.static/-/Sites-titan-master-catalog/default/dwe8a13e41/images/Titan/Catalog/1823WL02_2.jpg"
     ],
     category: 'Budget',
     strapType: 'Leather',
@@ -235,7 +235,7 @@ export const mockProducts: Product[] = [
     price: 2499,
     description: "A feature-packed smartwatch with UltraVU display, 24/7 heart rate monitoring, sleep tracking, and 100+ sports modes. With 1.96\" AMOLED display and 7-day battery life, it's your perfect fitness companion.",
     images: [
-      "https://m.media-amazon.com/images/I/71KjTSO8M9L._SL1500_.jpg"
+      "https://www.smartwatchspex.com/wp-content/uploads/2018/03/fastrack-reflex-smartwatch-smartband-fitness-tracker.png"
     ],
     category: 'Smartwatch',
     strapType: 'Rubber',
@@ -250,10 +250,10 @@ export const mockProducts: Product[] = [
     id: 15,
     name: "Fastrack All Nighters",
     brand: "Fastrack",
-    price: 1899,
+    price: 899,
     description: "Bold and edgy design for the night owls. Features a black dial with luminous hands, multifunction display, and a premium leather strap. Perfect for those who live life on their own terms.",
     images: [
-      "https://m.media-amazon.com/images/I/71K8Q8KqH-L._AC_SL1500_.jpg"
+      "https://www.fastrack.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw8d2e6013/images/Fastrack/Catalog/3195AP02_2.jpg?sw=800&sh=800.jpg"
     ],
     category: 'Budget',
     strapType: 'Leather',
@@ -267,10 +267,10 @@ export const mockProducts: Product[] = [
     id: 16,
     name: "Fastrack OTS Style",
     brand: "Fastrack",
-    price: 1599,
+    price: 599,
     description: "One-of-a-kind style with interchangeable straps and unique dial designs. The OTS collection lets you express your individuality with vibrant colors and bold patterns. Lightweight and comfortable for all-day wear.",
     images: [
-      "https://m.media-amazon.com/images/I/71KjTSO8M9L._SL1500_.jpg"
+      "https://m.media-amazon.com/images/I/91TGQoNrs-L._SL1500_.jpg"
     ],
     category: 'Budget',
     strapType: 'Rubber',
@@ -284,10 +284,10 @@ export const mockProducts: Product[] = [
     id: 17,
     name: "Fastrack Stunners",
     brand: "Fastrack",
-    price: 1299,
+    price: 1099,
     description: "Sleek and modern design that stands out. Features a minimalist dial with bold hour markers, date display, and a comfortable metal strap. Perfect for the style-conscious youth.",
     images: [
-      "https://m.media-amazon.com/images/I/71K8Q8KqH-L._AC_SL1500_.jpg"
+      "https://www.penguin.com.bd/wp-content/uploads/2022/10/3254NM01_2.png"
     ],
     category: 'Budget',
     strapType: 'Metal',
@@ -302,10 +302,10 @@ export const mockProducts: Product[] = [
     id: 18,
     name: "Casio G-Shock GA-2100",
     brand: "Casio",
-    price: 8990,
+    price: 899,
     description: "The 'CasiOak' combines G-Shock's legendary toughness with a sleek octagonal design. Features shock resistance, 200M water resistance, world time, and stopwatch. The perfect blend of style and durability.",
     images: [
-      "https://m.media-amazon.com/images/I/71KjTSO8M9L._SL1500_.jpg"
+      "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/G/GA/GA2/ga-2100-1a4/assets/GA-2100-1A4_front.jpg.transform/main-visual-sp/image.jpg"
     ],
     category: 'Budget',
     strapType: 'Rubber',
@@ -320,10 +320,10 @@ export const mockProducts: Product[] = [
     id: 19,
     name: "Casio G-Shock DW-5600",
     brand: "Casio",
-    price: 5990,
+    price: 599,
     description: "The iconic square G-Shock that started it all. Features shock resistance, 200M water resistance, multi-function alarm, and EL backlight. A timeless classic that never goes out of style.",
     images: [
-      "https://m.media-amazon.com/images/I/71KjTSO8M9L._SL1500_.jpg"
+      "https://img.joomcdn.net/01b0161f49160c09dcc6bf448696cadaaf7e53f3_original.jpeg"
     ],
     category: 'Budget',
     strapType: 'Rubber',
@@ -338,10 +338,10 @@ export const mockProducts: Product[] = [
     id: 20,
     name: "Casio G-Shock GA-700",
     brand: "Casio",
-    price: 7490,
+    price: 749,
     description: "Rugged analog-digital combination with large buttons for easy operation. Features shock resistance, 200M water resistance, world time, and 1/100-second stopwatch. Built for extreme conditions.",
     images: [
-      "https://m.media-amazon.com/images/I/71KjTSO8M9L._SL1500_.jpg"
+      "https://s.turbifycdn.com/aah/4-watches/casio-g-shock-ga-700-analog-digital-green-military-style-watch-ga700uc-3a-37.jpg"
     ],
     category: 'Budget',
     strapType: 'Rubber',
@@ -355,10 +355,10 @@ export const mockProducts: Product[] = [
     id: 21,
     name: "Casio Edifice EFR-108",
     brand: "Casio",
-    price: 8990,
+    price: 899,
     description: "Sophisticated chronograph with a sporty yet elegant design. Features 1/100-second stopwatch, date display, and luminous hands. The stainless steel case and bracelet offer premium durability and style.",
     images: [
-      "https://m.media-amazon.com/images/I/71K8Q8KqH-L._AC_SL1500_.jpg"
+      "http://watchcentre.pk/wp-content/uploads/2016/11/Casio-Edifice-EFR-539SG-7AV.jpg"
     ],
     category: 'Budget',
     strapType: 'Metal',
@@ -372,10 +372,10 @@ export const mockProducts: Product[] = [
     id: 22,
     name: "Casio Vintage A159W",
     brand: "Casio",
-    price: 2490,
+    price: 249,
     description: "Retro digital watch with a classic 80s aesthetic. Features dual time, daily alarm, hourly time signal, and LED backlight. A nostalgic timepiece that brings back the golden era of digital watches.",
     images: [
-      "https://m.media-amazon.com/images/I/71KjTSO8M9L._SL1500_.jpg"
+      "https://watchcentre.pk/wp-content/uploads/2016/10/a159w-N1-stainless-steel-wa.jpg"
     ],
     category: 'Budget',
     strapType: 'Metal',
@@ -393,7 +393,7 @@ export const mockProducts: Product[] = [
     price: 1250000,
     description: "The iconic diver's watch, a legend in its own right. Features a unidirectional rotatable bezel, luminescent Chromalight display, and water resistance up to 300 meters. Powered by the Caliber 3235 movement with 70-hour power reserve.",
     images: [
-      "https://www.rolex.com/content/dam/rolexcom/e-brochure/2021/watches/submariner/m126610ln-0001/model-page-submariner-m126610ln-0001-2101jva_001.jpg"
+      "https://a.1stdibscdn.com/rolex-submariner-date-116610ln-for-sale/j_6073/j_201431821692631776688/j_20143182_1692631776964_bg_processed.jpg"
     ],
     category: 'Luxury',
     strapType: 'Metal',
@@ -411,7 +411,7 @@ export const mockProducts: Product[] = [
     price: 980000,
     description: "The classic Datejust in a contemporary 41mm case. Features the signature Cyclops lens over the date, Oystersteel construction, and the Perpetual movement. A symbol of timeless elegance and precision.",
     images: [
-      "https://www.rolex.com/content/dam/rolexcom/e-brochure/2021/watches/datejust/m126300-0001/model-page-datejust-m126300-0001-2101jva_001.jpg"
+      "https://images.squarespace-cdn.com/content/v1/63a135dfba62c569dff603c0/1675715789846-NCHSNONR8S3Z48R2G9XD/ROLEX+DATEJUST+41+BLUE+DIAL+126334+WATCH.jpg"
     ],
     category: 'Luxury',
     strapType: 'Metal',
@@ -428,7 +428,7 @@ export const mockProducts: Product[] = [
     price: 1120000,
     description: "Designed for explorers and adventurers. Features a distinctive 24-hour hand, fixed bezel with 24-hour graduations, and luminescent Chromalight display. Built to withstand extreme conditions with 100-meter water resistance.",
     images: [
-      "https://www.rolex.com/content/dam/rolexcom/e-brochure/2021/watches/explorer-ii/m226570-0001/model-page-explorer-ii-m226570-0001-2101jva_001.jpg"
+      "https://rolexwatchtrader.co.uk/wp-content/uploads/2019/10/DSC_6978.jpg"
     ],
     category: 'Luxury',
     strapType: 'Metal',
@@ -445,7 +445,7 @@ export const mockProducts: Product[] = [
     price: 1180000,
     description: "The ultimate travel companion. Features a bidirectional rotatable 24-hour bezel, independent 24-hour hand, and dual time zone display. Powered by the Caliber 3285 movement, perfect for frequent travelers.",
     images: [
-      "https://www.rolex.com/content/dam/rolexcom/e-brochure/2021/watches/gmt-master-ii/m126710blnr-0001/model-page-gmt-master-ii-m126710blnr-0001-2101jva_001.jpg"
+      "https://cdn.thewatchpages.com/app/uploads/2023/04/28100807/rolex-gmt-master-ii-126718grnr-0001.jpeg"
     ],
     category: 'Luxury',
     strapType: 'Metal',
