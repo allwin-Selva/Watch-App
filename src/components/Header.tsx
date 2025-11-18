@@ -32,6 +32,7 @@ const Header: React.FC = () => {
           <nav className="hidden md:flex md:space-x-8">
             <Link to="/" className="text-sm font-medium text-brand-light/80 hover:text-brand-accent transition-colors">Home</Link>
             <Link to="/products" className="text-sm font-medium text-brand-light/80 hover:text-brand-accent transition-colors">All Watches</Link>
+            <Link to="/orders" className="text-sm font-medium text-brand-light/80 hover:text-brand-accent transition-colors">Orders</Link>
           </nav>
 
           <div className="flex items-center space-x-4">
@@ -68,6 +69,7 @@ const Header: React.FC = () => {
             <nav className="flex flex-col space-y-2">
                 <Link to="/" className="text-sm font-medium text-brand-light/80 hover:text-brand-accent transition-colors py-2" onClick={() => setIsMenuOpen(false)}>Home</Link>
                 <Link to="/products" className="text-sm font-medium text-brand-light/80 hover:text-brand-accent transition-colors py-2" onClick={() => setIsMenuOpen(false)}>All Watches</Link>
+                <Link to="/orders" className="text-sm font-medium text-brand-light/80 hover:text-brand-accent transition-colors py-2" onClick={() => setIsMenuOpen(false)}>Orders</Link>
             </nav>
             <form onSubmit={handleSearch} className="mt-4 flex items-center">
               <input

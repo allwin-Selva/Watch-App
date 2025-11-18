@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { useCart } from '../context/CartContext';
+import { useOrder } from '../context/OrderContext';
 import { useNavigate } from 'react-router-dom';
+import type { Order, OrderItem, TrackingEvent } from '../types';
 
 const CheckoutPage: React.FC = () => {
   const { state, dispatch } = useCart();
+  const { dispatch: orderDispatch } = useOrder();
   const navigate = useNavigate();
   const [formState, setFormState] = useState({
       email: '',
@@ -25,9 +28,54 @@ const CheckoutPage: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
       e.preventDefault();
       // In a real app, this would process payment
-      alert('Order placed successfully! (This is a demo)');
+      
+      // Create order items from cart
+      const orderItems: OrderItem[] = state.items.map(item => ({
+        productId: item.id,
+        name: item.name,
+        brand: item.brand,
+        price: item.price,
+        quantity: item.quantity,
+        image: item.images[0],
+      }));
+
+      // Generate order ID and order number
+      const orderId = `order-${Date.now()}-${Math.random().toString(36).substring(2, 11)}`;
+      const orderNumber = `TICK-${Date.now().toString().slice(-8)}`;
+
+      // Create initial tracking event
+      const initialTrackingEvent: TrackingEvent = {
+        id: 1,
+        status: 'pending',
+        message: 'Order placed successfully. We are processing your order.',
+        timestamp: new Date().toISOString(),
+      };
+
+      // Calculate estimated delivery (7 days from now)
+      const estimatedDelivery = new Date();
+      estimatedDelivery.setDate(estimatedDelivery.getDate() + 7);
+
+      // Create order object
+      const newOrder: Order = {
+        id: orderId,
+        orderNumber: orderNumber,
+        items: orderItems,
+        shippingAddress: formState,
+        status: 'pending',
+        total: subtotal,
+        createdAt: new Date().toISOString(),
+        trackingEvents: [initialTrackingEvent],
+        estimatedDelivery: estimatedDelivery.toISOString(),
+      };
+
+      // Add order to context
+      orderDispatch({ type: 'ADD_ORDER', payload: newOrder });
+
+      // Clear cart
       dispatch({ type: 'CLEAR_CART' });
-      navigate('/');
+
+      // Navigate to order tracking page
+      navigate(`/orders/${orderId}`);
   };
   
   if (state.items.length === 0) {

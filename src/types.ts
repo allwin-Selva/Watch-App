@@ -24,3 +24,44 @@ export interface Product {
 export interface CartItem extends Product {
   quantity: number;
 }
+
+export type OrderStatus = 'pending' | 'confirmed' | 'processing' | 'shipped' | 'delivered' | 'cancelled';
+
+export interface OrderItem {
+  productId: number;
+  name: string;
+  brand: string;
+  price: number;
+  quantity: number;
+  image: string;
+}
+
+export interface ShippingAddress {
+  email: string;
+  firstName: string;
+  lastName: string;
+  address: string;
+  city: string;
+  country: string;
+  postalCode: string;
+}
+
+export interface TrackingEvent {
+  id: number;
+  status: OrderStatus;
+  message: string;
+  timestamp: string;
+  location?: string;
+}
+
+export interface Order {
+  id: string;
+  orderNumber: string;
+  items: OrderItem[];
+  shippingAddress: ShippingAddress;
+  status: OrderStatus;
+  total: number;
+  createdAt: string;
+  trackingEvents: TrackingEvent[];
+  estimatedDelivery?: string;
+}
