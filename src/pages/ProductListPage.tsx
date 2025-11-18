@@ -5,11 +5,13 @@ import ProductCard from '../components/ProductCard';
 
 const ProductListPage: React.FC = () => {
   const [searchParams] = useSearchParams();
+  // Calculate max price from products to accommodate all watches including Rolex
+  const maxPrice = Math.max(...mockProducts.map(p => p.price), 1300000);
   const [filters, setFilters] = useState({
     category: searchParams.get('category') || '',
     brand: '',
     strapType: '',
-    priceRange: [0, 800000],
+    priceRange: [0, maxPrice],
   });
   const [showFilters, setShowFilters] = useState(false);
   const searchTerm = searchParams.get('search') || '';
@@ -68,7 +70,7 @@ const ProductListPage: React.FC = () => {
         {/* Price Range */}
         <div>
           <label htmlFor="priceRange" className="block text-sm font-medium text-brand-light/90">Price up to: ₹{filters.priceRange[1].toLocaleString('en-IN')}</label>
-          <input id="priceRange" type="range" min="0" max="800000" step="5000" value={filters.priceRange[1]} onChange={handlePriceChange} className="w-full h-2 bg-brand-slate rounded-lg appearance-none cursor-pointer accent-brand-accent mt-2"/>
+          <input id="priceRange" type="range" min="0" max={maxPrice} step={maxPrice > 1000000 ? 50000 : 5000} value={filters.priceRange[1]} onChange={handlePriceChange} className="w-full h-2 bg-brand-slate rounded-lg appearance-none cursor-pointer accent-brand-accent mt-2"/>
         </div>
       </aside>
   );
